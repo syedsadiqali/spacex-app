@@ -1,5 +1,8 @@
 # SpaceX Launch Data Viewer Application
 
+# Applicaton Link
+[SpaceX Viewer (Click here)](https://spacex-viewer.herokuapp.com/)
+
 ## Applicaton Stack
 
 It's based on React Framework with Hooks implementation for state management and lifeCycles, also some route hooks are being used to handle the history and location for search query based filter implementation.
@@ -27,9 +30,12 @@ the fitlers used here are route based query string filters.
 
 # Lighthouse Score
 
-## before - 
+## before (on heroku) - 
 ![old Score](https://i.ibb.co/z4wgGhq/Screenshot-2020-09-12-at-9-45-31-PM.png)
 
-## after - 
+## after (on localhost)- 
 I tried to use purge css razzle plugin - to purge unused bootstrap css files (i used that for card layout)
 ![new Score](https://i.ibb.co/KwZwhN9/Screenshot-2020-09-12-at-9-51-16-PM.png)
+
+## after (on heroku) -
+![new Score](https://i.ibb.co/HzY8bj2/Screenshot-2020-09-12-at-9-56-08-PM.png)
