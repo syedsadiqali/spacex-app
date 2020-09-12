@@ -25,3 +25,11 @@ the homepage uses atomic pattern, component based structure approach for increas
 ## Route queryString based filters
 the fitlers used here are route based query string filters.
 
+# Lighthouse Score
+
+## before - 
+![old Score](https://i.ibb.co/z4wgGhq/Screenshot-2020-09-12-at-9-45-31-PM.png)
+
+## after - 
+I tried to use purge css razzle plugin - to purge unused bootstrap css files (i used that for card layout)
+![new Score](https://i.ibb.co/KwZwhN9/Screenshot-2020-09-12-at-9-51-16-PM.png)
