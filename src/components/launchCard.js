@@ -6,7 +6,7 @@ export default function LaunchCard(props) {
   const { launch } = props;
 
   return (
-    <div className="launch-card col-12 col-sm-6 col-lg-3 ">
+    <div className="launch-card">
       <div className="card">
         <img
           className="card-img-top mission-patch"
@@ -30,13 +30,13 @@ export default function LaunchCard(props) {
           <p>
             <span className="detail bold">Successful Launch: </span>
             <span className="color-blue">
-              {launch.launchSuccess ? "True" : "False"}
+              {launch.launchSuccess ? "True" : "false"}
             </span>
           </p>
           <p>
             <span className="detail bold">Sucessfull Landing: </span>
             <span className="color-blue">
-              {launch.landSuccess ? "True" : "False"}
+              {launch.landSuccess ? "True" : "false"}
             </span>
           </p>
         </div>

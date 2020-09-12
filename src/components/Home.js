@@ -3,10 +3,10 @@ import { useLocation, useHistory } from "react-router-dom";
 import apiUtils from "../utils/apiUtils";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import LaunchCard from "./launchCard";
 
 import "./Home.css";
 import Footer from "./Footer";
+import LaunchesList from "./launchesList";
 
 export default function Home() {
   const [launches, setLaunches] = useState([]);
@@ -32,35 +32,21 @@ export default function Home() {
   };
 
   return (
-    <div
-      className="container-fluid home
-    "
-    >
-      <Header />
-
-      <div className="row">
-        <div className="col-sm-3 col-md-2">
+    <div className="custom-container home">
+      <div className="custom-row max-width-xl mx-0">
+        <Header />
+      </div>
+      <div className="custom-row max-width-xl">
+        <div className="sidebar-col">
           <Sidebar updateSearchString={handleUpdateSearchString} />
         </div>
-        <div className="col-sm-9 col-md-10 ">
-          {loading ? (
-            <div className="loader"></div>
-          ) : (
-            <div className="row">
-              {launches.length > 0 ? (
-                launches.map((launch) => (
-                  <LaunchCard key={launch.flightNumber} launch={launch} />
-                ))
-              ) : (
-                <p className="no-launches">
-                  dang... no launches for your query...
-                </p>
-              )}
-            </div>
-          )}
+        <div className="main-area-col ">
+          <LaunchesList loading={loading} launches={launches} />
         </div>
       </div>
-      <Footer />
+      <div className="custom-row max-width-xl">
+        <Footer />
+      </div>
     </div>
   );
 }

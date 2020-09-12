@@ -49,7 +49,7 @@ export default function Sidebar(props) {
         filterName="Launch Success Filter"
         filterValue={launchSuccessFilter}
         setFilter={setLaunchSuccessFilter}
-        filterOptions={["true", "False"]}
+        filterOptions={["true", "false"]}
       />
       <FilterGroup
         filterName="Land Success Filter"

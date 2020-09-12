@@ -11,8 +11,9 @@ export default function FilterGroup(props) {
       )}
       <hr />
       <div className="filters-group">
-        {props.filterOptions.map((option) => (
+        {props.filterOptions.map((option, index) => (
           <span
+            key={index}
             className={`filter-item ${
               props.filterValue === option ? "active" : undefined
             }`}
