@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <div className="custom-container home">
-      <div className="custom-row max-width-xl mx-0">
+      <div className="custom-row max-width-xl">
         <Header />
       </div>
       <div className="custom-row max-width-xl">
