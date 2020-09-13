@@ -14,6 +14,26 @@ It's based on React Framework with Hooks implementation for state management and
 5. Express (Node JS framework for easy server implementation)
 6. React-Router-DOM (for location and history handling)
 
+# Running the Application on Local
+
+``` npm install ```
+
+and then
+
+``` npm run start:dev```
+
+## Build on local
+
+``` npm run build ```
+
+ and then 
+
+ ``` npm start ``` to run production build on localhost
+
+ ## running test cases
+
+ ``` npm run test ``` to run test cases
+
 # Features
 
 ## CSS Grid
