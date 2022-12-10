@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import apiUtils from "../utils/apiUtils";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
@@ -14,8 +14,8 @@ export default function Home() {
 
   const location = useLocation();
 
-  const history = useHistory();
-
+  let navigate = useNavigate();
+  
   useEffect(() => {
     const fetchLaunches = async () => {
       const res = await apiUtils.fetchLaunches(location.search);
@@ -28,7 +28,7 @@ export default function Home() {
 
   const handleUpdateSearchString = (searchString) => {
     setLoading(true);
-    history.push(searchString);
+    navigate(searchString);
   };
 
   return (
